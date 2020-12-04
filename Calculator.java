@@ -5,21 +5,21 @@ import java.util.Scanner;
 public class Calculator {
 
     public static void main(String args[]){
-        int options;
+        int option;
         Double fnum, snum, result;
         Scanner scan = new Scanner(System.in);
         System.out.print("Enter 1 for Addition, 2 for Subtraction, 3 for multiplication and 4 for division: ");
-        options = scan.nextInt();
-        if(options==1){
+        option = scan.nextInt();
+        if(option==1){
             System.out.println("You have chose Addition");
         }
-        else if(options==2){
+        else if(option==2){
             System.out.println("You have chose Subtraction");
         }
-        else if(options==3){
+        else if(option==3){
             System.out.println("You have choose Multiplication");
         }
-        else if(options == 4){
+        else if(option == 4){
             System.out.println("you have choose Division");
         }
         System.out.print("Enter 1st number here: ");
@@ -27,7 +27,7 @@ public class Calculator {
         System.out.print("Enter 2nd number here: ");
         snum = scan.nextDouble();
 
-        switch (options){
+        switch (option){
             case 1:
                 result = fnum+snum;
                 System.out.println("Answer: "+ result);
